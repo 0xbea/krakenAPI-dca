@@ -8,7 +8,7 @@ Requirements:
 * kraken.com public & private API key
 * adequate funding in Kraken account
 
-Instructions:
+Instructions: \
 Download this repo, add your API keys to the appropriate files. Now you can execute commands like the ones in the examples. 
 
 Usage:
@@ -22,6 +22,10 @@ Usage:
 # Example: ./krakenapi.py OpenPositions
 # Example: ./krakenapi.py AddOrder pair=xxbtzusd type=buy ordertype=market volume=0.003 leverage=5
 ```
+
+To-do:
+1. DCA purchase function
+1. Create a cronjob
 
 References:
 * https://support.kraken.com/hc/en-us/articles/360025180232-Kraken-REST-API-command-line-client
