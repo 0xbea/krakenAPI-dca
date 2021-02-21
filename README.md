@@ -9,10 +9,16 @@ Requirements:
 * adequate funding in Kraken account
 
 Instructions: \
-Download this repo, add your API keys to the appropriate files. Now you can execute commands like the ones in the examples. 
+Download this repo, add your API keys to the appropriate files. Now you can execute commands and results will look something like this if successful.
 
-Usage:
 ```
+0xbea@DESKTOP:~/KrakenAPI$ ./order-dca xlmusd 15
+Current price per unit: 0.50175100
+Volume desired: 29.89530663616016709483
+{"error":[],"result":{"descr":{"order":"buy 29.89530663 XLMUSD @ market"},"txid":["A9A9A9-AAAAAA-A9A9A9"]}}
+```
+
+With the Kraken API from kraken.com, you can execute commands as follows:
 # Kraken Rest API
 #
 # Usage: ./krakenapi.py method [parameters]
