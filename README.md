@@ -24,8 +24,8 @@ Usage:
 ```
 
 To-do:
-~~1. DCA purchase function~~
-2. Create a cronjob.
+~~1. DCA purchase function~~ \
+2. Create a cronjob. \
 3. More descriptive error reporting.
 
 References:
