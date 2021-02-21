@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# usage: ./order-dca [assetpair] [amount]
+# example (buy $20 worth of DOGE): ./order-dca xdgusd 20
+# example (buy 30 EUR worth of eth): ./order-dca etheur 30
+
+# obtain market bid price of asset
+RESPONSE=$(./resources/krakenapi.py Ticker pair=$1)
+bid=$(echo $RESPONSE | grep -Po '(?<="b":\[")\d+.\d+')
+echo "Current price per unit: $bid"
+
+# calculate how much asset you can purchase at market price
+volume=$(echo "$2 / $bid" | bc -l) 
+echo "Volume desired: $volume"
+
+# purchase desired amount of asset
+RESULT=$(./resources/krakenapi.py AddOrder pair=$1 type=buy ordertype=market volume=$volume)
+echo $RESULT
