@@ -19,6 +19,7 @@ Volume desired: 29.89530663616016709483
 ```
 
 With the Kraken API from kraken.com, you can execute commands as follows:
+```
 # Kraken Rest API
 #
 # Usage: ./krakenapi.py method [parameters]
