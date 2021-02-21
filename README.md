@@ -24,8 +24,9 @@ Usage:
 ```
 
 To-do:
-1. DCA purchase function
-1. Create a cronjob
+~~1. DCA purchase function~~
+2. Create a cronjob.
+3. More descriptive error reporting.
 
 References:
 * https://support.kraken.com/hc/en-us/articles/360025180232-Kraken-REST-API-command-line-client
