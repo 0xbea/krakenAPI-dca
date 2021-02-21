@@ -23,7 +23,7 @@ Usage:
 # Example: ./krakenapi.py AddOrder pair=xxbtzusd type=buy ordertype=market volume=0.003 leverage=5
 ```
 
-To-do:
+To-do: \
 ~~1. DCA purchase function~~ \
 2. Create a cronjob. \
 3. More descriptive error reporting.
