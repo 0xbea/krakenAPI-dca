@@ -12,7 +12,7 @@ This is a project to make my life easier by being able to place DCA'd orders via
 Download this repo, add your API keys to the appropriate files. Now you can execute commands and results will look something like this if successful.
 
 ```
-0xbea@DESKTOP:~/KrakenAPI$ ./order-dca xlmusd 15
+0xbea@DESKTOP:~/krakenAPI-dca$ ./order-dca xlmusd 15
 Current price per unit: 0.50175100
 Volume desired: 29.89530663616016709483
 {"error":[],"result":{"descr":{"order":"buy 29.89530663 XLMUSD @ market"},"txid":["A9A9A9-AAAAAA-A9A9A9"]}}
@@ -34,7 +34,7 @@ With the Kraken API from kraken.com, you can execute commands as follows:
 You may schedule orders through methods like modifying the crontab file with `crontab -e`
 ```
 # m h  dom mon dow   command
-0 19 * * *      /home/0xbea/KrakenAPI/example-schedule >> log.txt
+0 19 * * *      /home/<username>/krakenAPI-dca/example-schedule >> log.txt
 ```
 
 ## To-do: 
