@@ -4,6 +4,10 @@
 # example (buy $20 worth of DOGE): ./order-dca xdgusd 20
 # example (buy 30 EUR worth of eth): ./order-dca etheur 30
 
+# get exchange time
+TIME=$(./resources/krakenapi.py Time)
+echo "Exchange Time: $TIME"
+
 # obtain market bid price of asset
 RESPONSE=$(./resources/krakenapi.py Ticker pair=$1)
 bid=$(echo $RESPONSE | grep -Po '(?<="b":\[")\d+.\d+')
