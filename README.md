@@ -37,7 +37,7 @@ You may schedule orders through methods like modifying the crontab file with `cr
 0 19 * * *      /home/0xbea/KrakenAPI/example-schedule >> log.txt
 ```
 
-## To-do: \
+## To-do: 
 ~~1. DCA purchase function~~ \
 ~~2. Create a cronjob.~~ \
 3. More descriptive error reporting.
