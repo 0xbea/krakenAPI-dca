@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# replace ~/KrakenAPI/ with your path
+cd /home/0xbea/KrakenAPI/
+
+# list your orders below.
+# SYNTAX: ./order-dca [assetpair] [amount]
+# ./order-dca xdgusd 5
+./order-dca xbtusd 15
+./order-dca ethusd 20
