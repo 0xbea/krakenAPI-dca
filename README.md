@@ -8,7 +8,7 @@ This is a project to make my life easier by being able to place DCA'd orders via
 * kraken.com public & private API key
 * adequate funding in Kraken account
 
-# Instructions: \
+# Instructions: 
 Download this repo, add your API keys to the appropriate files. Now you can execute commands and results will look something like this if successful.
 
 ```
@@ -30,11 +30,11 @@ With the Kraken API from kraken.com, you can execute commands as follows:
 # Example: ./krakenapi.py AddOrder pair=xxbtzusd type=buy ordertype=market volume=0.003 leverage=5
 ```
 
-## Cron Scheduling: \
+## Cron Scheduling: 
 You may schedule orders through methods like modifying the crontab file with `crontab -e`
 ```
 # m h  dom mon dow   command
-0 19 * * *      /home/0xbea/KrakenAPI/schedule-order-day >> log.txt
+0 19 * * *      /home/0xbea/KrakenAPI/example-schedule >> log.txt
 ```
 
 To-do: \
